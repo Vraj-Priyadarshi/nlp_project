@@ -1,0 +1,115 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints
+*.nbconvert.ipynb
+
+# =========================
+# ML Models & Artifacts
+# =========================
+# Serialized models
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.keras
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.sav
+*.model
+
+# TensorFlow / Keras
+saved_model/
+*.pb
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# =========================
+# Data Files
+# =========================
+data/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.feather
+*.db
+*.sqlite
+
+# Large files
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.7z
+
+# =========================
+# Logs & Outputs
+# =========================
+logs/
+*.log
+output/
+outputs/
+results/
+runs/
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Testing & Coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Build & Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Misc
+# =========================
+*.tmp
+*.bak
+*.orig
