@@ -7,61 +7,46 @@ __pycache__/
 *.so
 
 # Virtual environments
+.venv/
 venv/
 env/
 ENV/
-.venv/
-.env/
 
 # =========================
 # Jupyter Notebook
 # =========================
-.ipynb_checkpoints
+.ipynb_checkpoints/
 *.nbconvert.ipynb
 
 # =========================
-# ML Models & Artifacts
+# Large ML Model Files (>50MB)
 # =========================
-# Serialized models
-*.pkl
-*.joblib
+randomForest_BOW.joblib
+RandomForestClassifier_BOW_WTV.joblib
+RandomForestClassifier_WTV.joblib
+
+# Large model weights
+*.safetensors
 *.h5
 *.hdf5
 *.keras
 *.onnx
-*.pt
-*.pth
-*.ckpt
-*.sav
-*.model
+*.pkl
 
-# TensorFlow / Keras
+# Saved model directories
+sbert_quora_model/
+cross_encoder_quora/
+checkpoints/
 saved_model/
-*.pb
-
-# MLflow
-mlruns/
-mlartifacts/
-
-# Weights & Biases
-wandb/
 
 # =========================
-# Data Files
+# Data Files (large)
 # =========================
+train.csv
 data/
 datasets/
-*.csv
-*.tsv
-*.xlsx
-*.xls
-*.json
-*.parquet
-*.feather
-*.db
-*.sqlite
 
-# Large files
+# Large archives
 *.zip
 *.tar
 *.tar.gz
@@ -73,10 +58,6 @@ datasets/
 # =========================
 logs/
 *.log
-output/
-outputs/
-results/
-runs/
 
 # =========================
 # IDEs & Editors
@@ -91,21 +72,6 @@ runs/
 # =========================
 .DS_Store
 Thumbs.db
-
-# =========================
-# Testing & Coverage
-# =========================
-.pytest_cache/
-.coverage
-htmlcov/
-
-# =========================
-# Build & Distribution
-# =========================
-build/
-dist/
-*.egg-info/
-.eggs/
 
 # =========================
 # Misc
