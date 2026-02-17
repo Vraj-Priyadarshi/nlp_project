@@ -45,6 +45,7 @@ saved_model/
 train.csv
 data/
 datasets/
+dataset/*.csv
 
 # Large archives
 *.zip
