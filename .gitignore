@@ -8,6 +8,7 @@ __pycache__/
 
 # Virtual environments
 .venv/
+.venv_deploy/
 venv/
 env/
 ENV/
@@ -19,40 +20,43 @@ ENV/
 *.nbconvert.ipynb
 
 # =========================
-# Large ML Model Files (>50MB)
+# Large Model Files (>100MB — cannot push to GitHub)
 # =========================
+# Random Forest models (300-875 MB each)
 randomForest_BOW.joblib
 RandomForestClassifier_BOW_WTV.joblib
 RandomForestClassifier_WTV.joblib
 
-# Large model weights
-*.safetensors
-*.h5
-*.hdf5
-*.keras
-*.onnx
-*.pkl
+# Word2Vec trimmed vectors (127 MB)
+word2vec_trimmed.kv.vectors.npy
 
-# Saved model directories
-sbert_quora_model/
-cross_encoder_quora/
-checkpoints/
-saved_model/
+# Unused models (not loaded by API)
+LogisticRegression_tfidf.joblib
+LinearSVC_tfidf.joblib
+XGBClassifier_BOW_WTV.joblib
+RandomForestClassifier_BOW_WTV.joblib
 
 # =========================
-# Data Files (large)
+# Large Data Files
 # =========================
+# Training data (60 MB) — not needed at runtime
 train.csv
-data/
-datasets/
-dataset/*.csv
 
-# Large archives
-*.zip
-*.tar
-*.tar.gz
-*.gz
-*.7z
+# Single QnA dataset (396 MB) — not needed at runtime
+dataset/single_qna.csv
+
+# =========================
+# Embeddings (can be regenerated)
+# =========================
+faq_embeddings.npy
+
+# =========================
+# Temp / one-time scripts
+# =========================
+trim_w2v.py
+
+# Checkpoints
+checkpoints/
 
 # =========================
 # Logs & Outputs

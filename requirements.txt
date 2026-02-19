@@ -1,0 +1,36 @@
+# Core
+fastapi==0.111.0
+uvicorn==0.30.1
+streamlit==1.35.0
+pydantic==2.7.1
+requests==2.32.3
+
+# Data
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+scikit-learn==1.5.0
+joblib==1.4.2
+
+# ML
+xgboost==2.0.3
+
+# NLP
+nltk==3.8.1
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.1
+distance==0.1.3
+
+# Transformers
+sentence-transformers==3.0.1
+torch==2.2.2
+transformers==4.41.2
+
+# Word2Vec
+gensim==4.3.2
+
+# FAISS
+faiss-cpu==1.8.0
+
+# Charts
+plotly==5.22.0
